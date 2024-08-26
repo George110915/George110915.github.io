@@ -609,7 +609,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">12</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">13</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -650,7 +650,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">12</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">13</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -720,6 +720,89 @@ GitHub：https://gi...
             <li class="home-article-item">
 
                 
+                    <div class="absolute top-[12px] right-[12px] text-[0.7rem] text-third-text-color rounded-medium bg-background-color-transparent-15 py-[2px] px-[10px] border border-border-color z-1 hover:text-first-text-color cursor-default">
+                        <i class="fa-regular fa-thumbtack mr-[3px] text-[0.65rem]"></i>置顶
+                    </div>
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/08/20/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E7%B3%BB%E5%88%97/">
+                            从零开始学习C++系列
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+update on 2024&#x2F;8&#x2F;26
+
+前言配置环境 
+基本编码格式 
+入门输入输出 
+循环 
+变量与数组 
+if 判断语句（分支结构） 
+基础函数 
+结构体 
+枚举与模拟 
+
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Aug 20 2024 00:00:00 GMT+1000">
+                
+                    2024-08-20
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/C/">C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/08/20/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E7%B3%BB%E5%88%97/">阅读全文<span class="seo-reader-text">从零开始学习C++系列</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
 
                 
 
@@ -734,10 +817,13 @@ GitHub：https://gi...
                     <div class="home-article-content markdown-body">
                         
                             
-思路：双向链表+组合数学（不过你要用单调栈也没人拦着你）
-我们现在先抛开题面，先换个思路。
-我们现在求：这个数能做多少个区间的次大值。
-我们现在设  分别为左边第一个比这个数大的 id，第二个比这个数大的 id，右边第一个比这个数大的 id，第二个...
+本来以为字符串多大，结果就这点，直接暴力。
+枚举起始点，对于每个起始点枚举后面  位有没有能用的即可。
+最后答案为 。
+
+附：计算代码
+枚举代码如下：
+12345678910for (int i = 0; i &lt; n; ++i) {    f...
                         
                     </div>
 
@@ -1295,75 +1381,6 @@ C++ 是面向对象语言。
                 </div>
             </li>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/08/20/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%9F%BA%E6%9C%AC%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F/">
-                            从零开始学习C++之基本代码格式
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            本文讲解 C++ 基本编码格式。
-C++ 中代码分为大致三个部分。
-1234567#include &lt;bits/stdc++.h&gt; // 头文件，主要用于引用/加入你要用的算法的支持库，这个是万能头文件，基本不用换。using names...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Tue Aug 20 2024 00:00:00 GMT+1000">
-                
-                    2024-08-20
-                
-            </span>
-        </span>
-        
-            <span class="home-article-category">
-                <i class="fa-solid fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/tags/C/">C++</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/2024/08/20/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%9F%BA%E6%9C%AC%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F/">阅读全文<span class="seo-reader-text">从零开始学习C++之基本代码格式</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
     </ul>
 
     <div class="home-paginator px-7 py-5">
@@ -1398,7 +1415,7 @@ C++ 中代码分为大致三个部分。
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共 12 篇文章
+                        共 13 篇文章
                     </span>
                     
                 </p>

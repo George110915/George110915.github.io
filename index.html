@@ -609,7 +609,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">11</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -637,7 +637,7 @@ mjx-container[display="true"] + br {
                 <div class="author flex flex-col justify-center my-2.5 mx-0">
     <div class="name">George222</div>
     
-        <div class="label">Lv1</div>
+        <div class="label">Lv2</div>
     
 </div>
                 <div class="statistics flex justify-around my-2.5">
@@ -650,7 +650,7 @@ mjx-container[display="true"] + br {
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">2</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">11</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -720,37 +720,45 @@ GitHub：https://gi...
             <li class="home-article-item">
 
                 
+                    <div class="absolute top-[12px] right-[12px] text-[0.7rem] text-third-text-color rounded-medium bg-background-color-transparent-15 py-[2px] px-[10px] border border-border-color z-1 hover:text-first-text-color cursor-default">
+                        <i class="fa-regular fa-thumbtack mr-[3px] text-[0.65rem]"></i>置顶
+                    </div>
+                
 
                 
 
                 
                 <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
                     <h3 class="home-article-title">
-                        <a href="/2024/08/26/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E7%BC%96%E8%AF%91%E5%99%A8%E4%B8%8B%E8%BD%BD/">
-                            从零开始学习C++之编译器下载
+                        <a href="/2024/08/25/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++/">
+                            从零开始学习C++
                         </a>
                     </h3>
 
                     <div class="home-article-content markdown-body">
                         
-                            这是什么？要先学习 C++，我们要先了解 C++ 是什么
+                            
+update on 2024/8/25
 
-这是 Wiki Pedia 的解释，我们来提炼一下：
+前言配置环境 
+基本编码格式 
+入门输入输出 
+循环 
+变量与数组 
+if 判断语句（分支结构） 
+基础函数 
+结构体 
+枚举与模拟 
 
-C++ 是一种高级语言。
-C++ 是 C 语言的扩展升级版。
-C++ 是面向对象语言。
-
-下载环境简单了解一下后，我们来下载 C++ ...
                         
                     </div>
 
                     <div class="home-article-meta-info-container">
     <div class="home-article-meta-info">
         <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Aug 26 2024 15:39:44 GMT+1000">
+            <span class="home-article-date" data-date="Sun Aug 25 2024 00:00:00 GMT+1000">
                 
-                    2024-08-26
+                    2024-08-25
                 
             </span>
         </span>
@@ -786,7 +794,583 @@ C++ 是面向对象语言。
         
     </div>
 
-    <a href="/2024/08/26/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E7%BC%96%E8%AF%91%E5%99%A8%E4%B8%8B%E8%BD%BD/">阅读全文<span class="seo-reader-text">从零开始学习C++之编译器下载</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    <a href="/2024/08/25/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++/">阅读全文<span class="seo-reader-text">从零开始学习C++</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/08/25/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E6%9E%9A%E4%B8%BE%E4%B8%8E%E6%A8%A1%E6%8B%9F/">
+                            从零开始学习C++之枚举与模拟
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            枚举和模拟是 C++ 中最为基础的算法，也是之后赛时部分分的算法首选。
+枚举顾名思义，枚举就是将所有值全部扫一遍。
+枚举算法的流程图如下：
+我们很容易就可以写出伪代码：
+12345678for (枚举区间){	代码，例：	if (条件)	{		输出	...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sun Aug 25 2024 00:00:00 GMT+1000">
+                
+                    2024-08-25
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/C/">C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/08/25/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E6%9E%9A%E4%B8%BE%E4%B8%8E%E6%A8%A1%E6%8B%9F/">阅读全文<span class="seo-reader-text">从零开始学习C++之枚举与模拟</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/08/24/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%87%BD%E6%95%B0/">
+                            从零开始学习C++之函数
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            前言作者看着 200 行的主函数大模拟返回了 WA，陷入了沉思……
+咋办？把每个模块包装一下就知道哪里出错了，所以，今天讲函数。
+（太生硬了吧。。。）
+定义一个函数格式：
+1234返回值类型 函数名（变量 * n）{	代码}
+
+例如：
+1234int...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat Aug 24 2024 00:00:00 GMT+1000">
+                
+                    2024-08-24
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/C/">C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/08/24/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%87%BD%E6%95%B0/">阅读全文<span class="seo-reader-text">从零开始学习C++之函数</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/08/24/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E7%BB%93%E6%9E%84%E4%BD%93/">
+                            从零开始学习C++之结构体
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            前言之前讲过变量，讲了数据类型（如 int 等），而结构体就相当于创造一个类型。
+定义结构体首先，写上一个神圣不可侵犯的(bushi) struct。
+好了，不开玩笑了。
+在程序外围定义（一般写在命名空间后面）。
+1234struct 名字{	含有的...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat Aug 24 2024 00:00:00 GMT+1000">
+                
+                    2024-08-24
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/C/">C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/08/24/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E7%BB%93%E6%9E%84%E4%BD%93/">阅读全文<span class="seo-reader-text">从零开始学习C++之结构体</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/08/22/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8Bif%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5/">
+                            从零开始学习C++之if判断语句
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            当你想判断某个条件时，怎么办呢？
+当当当当（日常发疯），if 语句就派上用场了。
+使用方法不多废话，使用格式如下：
+123456789101112if (条件){	代码}else if (条件){	代码}else{	代码}
+
+注：else if/el...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Aug 22 2024 00:00:00 GMT+1000">
+                
+                    2024-08-22
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/C/">C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/08/22/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8Bif%E5%88%A4%E6%96%AD%E8%AF%AD%E5%8F%A5/">阅读全文<span class="seo-reader-text">从零开始学习C++之if判断语句</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/08/22/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E7%BB%84/">
+                            从零开始学习C++之变量与数组
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            变量没啥好讲的，讲下类型和格式得了。
+变量类型：
+int: 整数类型；范围大约为 。
+long long: 长整型；范围大约是 。
+unsigned int/long long: 不包括负数，整数范围扩大一倍。
+double: 小数类型（比 floa...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Aug 22 2024 00:00:00 GMT+1000">
+                
+                    2024-08-22
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/C/">C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/08/22/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E7%BB%84/">阅读全文<span class="seo-reader-text">从零开始学习C++之变量与数组</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/08/22/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%BE%AA%E7%8E%AF/">
+                            从零开始学习C++之循环
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            本文讲解 C++ 中循环的使用。
+C++ 中较常用的两种循环为 for 循环和 while 循环。
+for 循环for 循环主要用于实现两个区间中间的枚举。
+例如：从  中输出所有数就能使用 for 循环解决。
+这是 for 循环标准格式：
+1234...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Aug 22 2024 00:00:00 GMT+1000">
+                
+                    2024-08-22
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/C/">C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/08/22/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%BE%AA%E7%8E%AF/">阅读全文<span class="seo-reader-text">从零开始学习C++之循环</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/08/20/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E7%BC%96%E8%AF%91%E5%99%A8%E4%B8%8B%E8%BD%BD/">
+                            从零开始学习C++之编译器下载
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            这是什么？要先学习 C++，我们要先了解 C++ 是什么
+
+这是 Wiki Pedia 的解释，我们来提炼一下：
+
+C++ 是一种高级语言。
+C++ 是 C 语言的扩展升级版。
+C++ 是面向对象语言。
+
+下载环境简单了解一下后，我们来下载 C++ ...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Aug 20 2024 00:00:00 GMT+1000">
+                
+                    2024-08-20
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/C/">C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/08/20/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E7%BC%96%E8%AF%91%E5%99%A8%E4%B8%8B%E8%BD%BD/">阅读全文<span class="seo-reader-text">从零开始学习C++之编译器下载</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/2024/08/20/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%9F%BA%E6%9C%AC%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F/">
+                            从零开始学习C++之基本代码格式
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            本文讲解 C++ 基本编码格式。
+C++ 中代码分为大致三个部分。
+1234567#include &lt;bits/stdc++.h&gt; // 头文件，主要用于引用/加入你要用的算法的支持库，这个是万能头文件，基本不用换。using names...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Aug 20 2024 00:00:00 GMT+1000">
+                
+                    2024-08-20
+                
+            </span>
+        </span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/tags/C/">C++</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/2024/08/20/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%9F%BA%E6%9C%AC%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F/">阅读全文<span class="seo-reader-text">从零开始学习C++之基本代码格式</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
                 </div>
@@ -796,7 +1380,7 @@ C++ 是面向对象语言。
 
     <div class="home-paginator px-7 py-5">
         <div class="paginator">
-    <span class="page-number current">1</span>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa-regular fa-angle-right"></i></a>
 </div>
 
     </div>
@@ -826,7 +1410,7 @@ C++ 是面向对象语言。
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共 2 篇文章
+                        共 11 篇文章
                     </span>
                     
                 </p>

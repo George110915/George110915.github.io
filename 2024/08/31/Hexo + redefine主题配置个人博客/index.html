@@ -13,23 +13,28 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2024/08/22/从零开始学习c++之循环/"/>
+    <link rel="canonical" href="http://example.com/2024/08/31/hexo + redefine主题配置个人博客/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="本文讲解 C++ 中循环的使用。 C++ 中较常用的两种循环为 for 循环和 while 循环。 for 循环for 循环主要用于实现两个区间中间的枚举。 例如：从  中输出所有数就能使用 for 循环解决。 这是 for 循环标准格式： 123456789&#x2F;*for (变量类型 变量名 &#x3D; 左区间; 循环退出条件（如：i &lt;&#x3D; n）; 变量增加){	代码}*&#x2F;&#x2F;&#x2F; 例：从 1~100，每">
+        <meta name="description" content="前置准备 安装 node js 安装 git 安装 Hexo 创建 Github 仓库。   node js：1https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn  git：注：git 安装时一直继续就好，但是有 path 的地方一定要勾选。 1https:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;win  检查一下是否安装成功，在终端中输入： 123node -vnpm -vgit --ver">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从零开始学习C++之循环">
-<meta property="og:url" content="http://example.com/2024/08/22/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%BE%AA%E7%8E%AF/index.html">
+<meta property="og:title" content="Hexo + redefine主题配置个人博客">
+<meta property="og:url" content="http://example.com/2024/08/31/Hexo%20+%20redefine%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="George222">
-<meta property="og:description" content="本文讲解 C++ 中循环的使用。 C++ 中较常用的两种循环为 for 循环和 while 循环。 for 循环for 循环主要用于实现两个区间中间的枚举。 例如：从  中输出所有数就能使用 for 循环解决。 这是 for 循环标准格式： 123456789&#x2F;*for (变量类型 变量名 &#x3D; 左区间; 循环退出条件（如：i &lt;&#x3D; n）; 变量增加){	代码}*&#x2F;&#x2F;&#x2F; 例：从 1~100，每">
+<meta property="og:description" content="前置准备 安装 node js 安装 git 安装 Hexo 创建 Github 仓库。   node js：1https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn  git：注：git 安装时一直继续就好，但是有 path 的地方一定要勾选。 1https:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;win  检查一下是否安装成功，在终端中输入： 123node -vnpm -vgit --ver">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-08-21T14:00:00.000Z">
-<meta property="article:modified_time" content="2024-08-28T00:40:02.736Z">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/m10m6wak.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/v730m7k6.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/u1db64m4.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/tm4szn5x.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/0du7c9ze.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
+<meta property="article:published_time" content="2024-08-31T03:29:01.434Z">
+<meta property="article:modified_time" content="2024-08-31T03:29:52.304Z">
 <meta property="article:author" content="George222">
-<meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/m10m6wak.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
     
     
     <!--- Icon Part-->
@@ -41,7 +46,7 @@
     
     <title>
         
-            从零开始学习C++之循环 -
+            Hexo + redefine主题配置个人博客 -
         
         George222
     </title>
@@ -113,119 +118,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
-  direction: ltr;
-}
-
-mjx-container[jax="SVG"] > svg {
-  overflow: visible;
-}
-
-mjx-container[jax="SVG"][display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1em 0;
-}
-
-mjx-container[jax="SVG"][justify="left"] {
-  text-align: left;
-}
-
-mjx-container[jax="SVG"][justify="right"] {
-  text-align: right;
-}
-
-g[data-mml-node="merror"] > g {
-  fill: red;
-  stroke: red;
-}
-
-g[data-mml-node="merror"] > rect[data-background] {
-  fill: yellow;
-  stroke: none;
-}
-
-g[data-mml-node="mtable"] > line[data-line] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > rect[data-frame] {
-  stroke-width: 70px;
-  fill: none;
-}
-
-g[data-mml-node="mtable"] > .mjx-dashed {
-  stroke-dasharray: 140;
-}
-
-g[data-mml-node="mtable"] > .mjx-dotted {
-  stroke-linecap: round;
-  stroke-dasharray: 0,140;
-}
-
-g[data-mml-node="mtable"] > svg {
-  overflow: visible;
-}
-
-[jax="SVG"] mjx-tool {
-  display: inline-block;
-  position: relative;
-  width: 0;
-  height: 0;
-}
-
-[jax="SVG"] mjx-tool > mjx-tip {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-mjx-tool > mjx-tip {
-  display: inline-block;
-  padding: .2em;
-  border: 1px solid #888;
-  font-size: 70%;
-  background-color: #F8F8F8;
-  color: black;
-  box-shadow: 2px 2px 5px #AAAAAA;
-}
-
-g[data-mml-node="maction"][data-toggle] {
-  cursor: pointer;
-}
-
-mjx-status {
-  display: block;
-  position: fixed;
-  left: 1em;
-  bottom: 1em;
-  min-width: 25%;
-  padding: .2em .4em;
-  border: 1px solid #888;
-  font-size: 90%;
-  background-color: #F8F8F8;
-  color: black;
-}
-
-foreignObject[data-mjx-xml] {
-  font-family: initial;
-  line-height: normal;
-  overflow: visible;
-}
-
-.MathJax path {
-  stroke-width: 3;
-}
-
-mjx-container[display="true"] {
-  overflow: auto hidden;
-}
-
-mjx-container[display="true"] + br {
-  display: none;
-}
-</style></head>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
 
 
 <body>
@@ -548,7 +441,7 @@ mjx-container[display="true"] + br {
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">从零开始学习C++之循环</h1>
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Hexo + redefine主题配置个人博客</h1>
                 </div>
             
             </div>
@@ -569,47 +462,20 @@ mjx-container[display="true"] + br {
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-08-22</span>
-        <span class="mobile">2024-08-22</span>
+        <span class="desktop">2024-08-31 13:29:01</span>
+        <span class="mobile">2024-08-31 13:29:01</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-08-28 10:40:02</span>
-            <span class="mobile">2024-08-28 10:40:02</span>
+            <span class="desktop">2024-08-31 13:29:52</span>
+            <span class="mobile">2024-08-31 13:29:52</span>
             <span class="hover-info">更新</span>
         </span>
     
 
     
-        <span class="article-categories article-meta-item">
-            <i class="fa-regular fa-folders"></i>&nbsp;
-            <ul>
-                
-                
-                    
-                        
-                        <li>
-                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
-                        </li>
-                    
-                    
-                
-            </ul>
-        </span>
-    
-    
-        <span class="article-tags article-meta-item">
-            <i class="fa-regular fa-tags"></i>&nbsp;
-            <ul>
-                
-                    <li>
-                        <a href="/tags/C/">C++</a>&nbsp;
-                    </li>
-                
-            </ul>
-        </span>
     
 
     
@@ -631,19 +497,86 @@ mjx-container[display="true"] + br {
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <p>本文讲解 C++ 中循环的使用。</p>
-<p>C++ 中较常用的两种循环为 for 循环和 while 循环。</p>
-<h2 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h2><p>for 循环主要用于实现两个区间中间的枚举。</p>
-<p>例如：从 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="7.542ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 3333.6 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(777.8,0)"><path data-c="223C" d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z"></path></g><g data-mml-node="mn" transform="translate(1833.6,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g></g></g></svg></mjx-container> 中输出所有数就能使用 for 循环解决。</p>
-<p>这是 for 循环标准格式：</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">for (变量类型 变量名 = 左区间; 循环退出条件（如：i &lt;= n）; 变量增加)</span></span><br><span class="line"><span class="comment">{</span></span><br><span class="line"><span class="comment">	代码</span></span><br><span class="line"><span class="comment">}</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 例：从 1~100，每次+1</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++)</span><br></pre></td></tr></table></figure></div>
+            <h2 id="前置准备"><a href="#前置准备" class="headerlink" title="前置准备"></a>前置准备</h2><ol>
+<li>安装 node js</li>
+<li>安装 git</li>
+<li>安装 Hexo</li>
+<li>创建 Github 仓库。</li>
+</ol>
+<hr>
+<h3 id="node-js："><a href="#node-js：" class="headerlink" title="node js："></a>node js：</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://nodejs.org/zh-cn</span><br></pre></td></tr></table></figure></div>
 
-<h2 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h2><p>while 循环通常用于满足某个条件前/后的使用。</p>
-<p>while 循环标准格式如下：</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">while (进入条件) // 注：是进入条件</span></span><br><span class="line"><span class="comment">{</span></span><br><span class="line"><span class="comment">	代码</span></span><br><span class="line"><span class="comment">}</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">注：while会在条件满足时一直执行</span></span><br><span class="line"><span class="comment">例：while (true) 为死循环。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></div>
+<h3 id="git："><a href="#git：" class="headerlink" title="git："></a>git：</h3><p>注：git 安装时一直继续就好，但是<strong>有 path 的地方一定要勾选</strong>。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://git-scm.com/download/win</span><br></pre></td></tr></table></figure></div>
 
-<h2 id="作者的话"><a href="#作者的话" class="headerlink" title="作者的话"></a>作者的话</h2><p>循环这个还得多练，因为你永远不知道你要在什么用途、条件下用出来。。。</p>
-<p>喜欢点个推荐吧qwq。</p>
+<p>检查一下是否安装成功，在终端中输入：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="Hexo："><a href="#Hexo：" class="headerlink" title="Hexo："></a>Hexo：</h3><p>在终端中输入：<code>npm install hexo-cli -g</code>。</p>
+<p>检验是否安装：<code>hexo -v</code>。</p>
+<h3 id="github-仓库："><a href="#github-仓库：" class="headerlink" title="github 仓库："></a>github 仓库：</h3><h4 id="建立仓库"><a href="#建立仓库" class="headerlink" title="建立仓库"></a>建立仓库</h4><p>如果你没有账号，去 <a class="link"   target="_blank" rel="noopener" href="https://github.com/"  title="github 官网">github 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 注册一个。</p>
+<p>点击右上角 “+” 号，选择 “New repository”。</p>
+<ol>
+<li>Repository name 中填写：&lt;你的 Github 用户名&gt;.github.io。</li>
+<li>属性选择 “Public”（公开）。</li>
+</ol>
+<p>比如我的就是这样：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/m10m6wak.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
+                      alt="新仓库"
+                ><br>（报错是因为我已经建立过了）</p>
+<p>要注意是 main 分支还是 master 分支，不过现在默认是 main 分支。</p>
+<h4 id="ssh-密钥"><a href="#ssh-密钥" class="headerlink" title="ssh 密钥"></a>ssh 密钥</h4><p>新建一个文件夹作为本地存储。</p>
+<p>我建议命名为 “blog”，像这样：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/v730m7k6.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
+                      alt="blog 文件夹"
+                ></p>
+<p>在文件夹中右键–&gt;git bash here。</p>
+<p>先输入 <code>ssh</code> 检查一下 git 是否已经下载了 ssh 配件。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/u1db64m4.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
+                      alt="ssh 检验"
+                ></p>
+<p>生成 ssh：<br><code>ssh-keygen -t rsa -C &quot;注册 Github 时使用的邮件地址&quot;</code>。</p>
+<p>然后按四次回车。</p>
+<p>然后去：C盘 –&gt; User –&gt; &lt;你的用户&gt; –&gt; “.ssh” 文件夹找到这个文件。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/tm4szn5x.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
+                      alt="ssh 文件"
+                ><br>记事本打开并全选复制。</p>
+<p>然后进入 Github 点击头像进入 Setting。</p>
+<p>找到 “SSH and GPG keys”。</p>
+<p>点击 “New SSH Key”。</p>
+<p>名字随便，把刚刚复制的 ssh 粘贴进去。</p>
+<p>测试是否绑定成功：<code>ssh -T git@github.com</code>。</p>
+<p>有一个地方输入 yes，然后出现 “Successfully” 就好了。</p>
+<h2 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h2><p>在 “blog” 文件夹中右键选择 “Git Bash Here”。</p>
+<p>输入：<code>hexo init</code>。</p>
+<p>出现 “start blogging…” 就好了。</p>
+<p>输入 “hexo s” 会弹出一个网址，按 “Ctrl + C” 输入新命令。</p>
+<p>（那个网址打不开没关系，我也打不开qwq）</p>
+<p>在你的文件夹中打开 “_config.yml” 文件。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/0du7c9ze.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
+                      alt="_config.yml"
+                ></p>
+<p>翻到最底部，把 “deploy” 部分改一下。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:&lt;你的 Github 用户名&gt;/&lt;Github 仓库名&gt;.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure></div>
+
+<p>配置好后就可以三连一键上传了。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></div>
+
+<p>（有问题百度一下，github 上有很多奇奇怪怪问题的存档，也可以私信问我）</p>
+<h3 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h3><p>我们使用 redefine 主题，这个主题的自定义，方便程度都是很好的，作者也预留了许多插件接口。</p>
+<p>在 git 中输入：<code>git clone -b master https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine</code>。</p>
+<p>在 “_config.yml” 文件中把 deploy 上面的 “theme” 改成主题名就好了。</p>
+<p>然后就可以自定义了，参考 <a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/"  title="官方文章">官方文章 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 进行改动。</p>
 
         </div>
 
@@ -651,18 +584,18 @@ mjx-container[display="true"] + br {
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 从零开始学习C++之循环</li>
+        <li><strong>标题:</strong> Hexo + redefine主题配置个人博客</li>
         <li><strong>作者:</strong> George222</li>
         <li><strong>创建于
-                :</strong> 2024-08-22 00:00:00</li>
+                :</strong> 2024-08-31 13:29:01</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-08-28 10:40:02
+                    :</strong> 2024-08-31 13:29:52
             </li>
         
         <li>
-            <strong>链接:</strong> https://george110915.github.io/2024/08/22/从零开始学习C++之循环/
+            <strong>链接:</strong> https://george110915.github.io/2024/08/31/Hexo + redefine主题配置个人博客/
         </li>
         <li>
             <strong>
@@ -681,43 +614,20 @@ mjx-container[display="true"] + br {
         
 
         
-            <ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
-                
-                    <li class="tag-item mx-0.5">
-                        <a href="/tags/C/">#C++</a>&nbsp;
-                    </li>
-                
-            </ul>
-        
 
         
 
         
             <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
                 
-                    <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2024/08/22/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E7%BB%84/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">从零开始学习C++之变量与数组</span>
-                                <span class="post-nav-item">上一篇</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="next"
                         rel="next"
-                        href="/2024/08/20/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E7%BC%96%E8%AF%91%E5%99%A8%E4%B8%8B%E8%BD%BD/"
+                        href="/2024/08/28/%E9%A2%98%E8%A7%A3%EF%BC%9AP11000%20%5B%E8%93%9D%E6%A1%A5%E6%9D%AF%202024%20%E7%9C%81%20Python%20B%5D%20%E6%95%B0%E5%AD%97%E4%B8%B2%E4%B8%AA%E6%95%B0/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">从零开始学习C++之编译器下载</span>
+                                <span class="post-nav-title-item">题解：P11000 [蓝桥杯 2024 省 Python B] 数字串个数</span>
                                 <span class="post-nav-item">下一篇</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -781,8 +691,8 @@ mjx-container[display="true"] + br {
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">从零开始学习C++之循环</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#for-%E5%BE%AA%E7%8E%AF"><span class="nav-text">for 循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#while-%E5%BE%AA%E7%8E%AF"><span class="nav-text">while 循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%9C%E8%80%85%E7%9A%84%E8%AF%9D"><span class="nav-text">作者的话</span></a></li></ol>
+        <div class="page-title">Hexo + redefine主题配置个人博客</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87"><span class="nav-text">前置准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#node-js%EF%BC%9A"><span class="nav-text">node js：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git%EF%BC%9A"><span class="nav-text">git：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo%EF%BC%9A"><span class="nav-text">Hexo：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#github-%E4%BB%93%E5%BA%93%EF%BC%9A"><span class="nav-text">github 仓库：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AE"><span class="nav-text">开始配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="nav-text">主题配置</span></a></li></ol></li></ol>
 
     </div>
 </div>

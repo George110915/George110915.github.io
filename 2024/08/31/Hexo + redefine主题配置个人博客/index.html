@@ -18,15 +18,23 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta property="og:type" content="article">
+        <meta name="description" content="配置网站框架redefine自定义前置准备 安装 node js 安装 git 安装 Hexo 创建 Github 仓库。   node js：1https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn  git：注：git 安装时一直继续就好，但是有 path 的地方一定要勾选。 1https:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;win  检查一下是否安装成功，鼠标右键在 git bash 中">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo + redefine主题配置个人博客">
 <meta property="og:url" content="http://example.com/2024/08/31/Hexo%20+%20redefine%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="George222">
+<meta property="og:description" content="配置网站框架redefine自定义前置准备 安装 node js 安装 git 安装 Hexo 创建 Github 仓库。   node js：1https:&#x2F;&#x2F;nodejs.org&#x2F;zh-cn  git：注：git 安装时一直继续就好，但是有 path 的地方一定要勾选。 1https:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;win  检查一下是否安装成功，鼠标右键在 git bash 中">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/m10m6wak.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/v730m7k6.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/u1db64m4.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/tm4szn5x.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/0du7c9ze.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
 <meta property="article:published_time" content="2024-08-31T03:29:01.434Z">
-<meta property="article:modified_time" content="2024-09-03T13:16:03.089Z">
+<meta property="article:modified_time" content="2024-09-03T13:22:19.381Z">
 <meta property="article:author" content="George222">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/m10m6wak.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
     
     
     <!--- Icon Part-->
@@ -484,8 +492,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-09-03 23:16:03</span>
-            <span class="mobile">2024-09-03 23:16:03</span>
+            <span class="desktop">2024-09-03 23:22:19</span>
+            <span class="mobile">2024-09-03 23:22:19</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -512,7 +520,111 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <div class="tabs" id="tab-for-hexo-and-redefine-theme"><ul class="nav-tabs"></ul><div class="tab-content"></div></div>
+            <div class="tabs" id="tab-hexo-and-redefine-theme"><ul class="nav-tabs"><li class="tab active"><a class="#hexo-and-redefine-theme-1">配置网站框架</a></li><li class="tab"><a class="#hexo-and-redefine-theme-2">redefine自定义</a></li></ul><div class="tab-content"><div class="tab-pane active" id="hexo-and-redefine-theme-1"><h2 id="前置准备"><a href="#前置准备" class="headerlink" title="前置准备"></a>前置准备</h2><ol>
+<li>安装 node js</li>
+<li>安装 git</li>
+<li>安装 Hexo</li>
+<li>创建 Github 仓库。</li>
+</ol>
+<hr>
+<h3 id="node-js："><a href="#node-js：" class="headerlink" title="node js："></a>node js：</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://nodejs.org/zh-cn</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="git："><a href="#git：" class="headerlink" title="git："></a>git：</h3><p>注：git 安装时一直继续就好，但是<strong>有 path 的地方一定要勾选</strong>。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://git-scm.com/download/win</span><br></pre></td></tr></table></figure></div>
+
+<p>检查一下是否安装成功，鼠标右键在 git bash 中输入：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="Hexo："><a href="#Hexo：" class="headerlink" title="Hexo："></a>Hexo：</h3><p>在 git bash 中输入：<code>npm install hexo-cli -g</code>。</p>
+<p>检验是否安装：<code>hexo -v</code>。</p>
+<h3 id="github-仓库："><a href="#github-仓库：" class="headerlink" title="github 仓库："></a>github 仓库：</h3><h4 id="建立仓库"><a href="#建立仓库" class="headerlink" title="建立仓库"></a>建立仓库</h4><p>如果你没有账号，去 <a class="link"   target="_blank" rel="noopener" href="https://github.com/"  title="github 官网">github 官网 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 注册一个。</p>
+<p>点击右上角 “+” 号，选择 “New repository”。</p>
+<ol>
+<li>Repository name 中填写：&lt;你的 Github 用户名&gt;.github.io。</li>
+<li>属性选择 “Public”（公开）。</li>
+</ol>
+<p>比如我的就是这样：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/m10m6wak.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
+                      alt="新仓库"
+                ><br>（报错是因为我已经建立过了）</p>
+<p>要注意是 main 分支还是 master 分支，不过现在默认是 main 分支。</p>
+<h4 id="ssh-密钥"><a href="#ssh-密钥" class="headerlink" title="ssh 密钥"></a>ssh 密钥</h4><p>新建一个文件夹作为本地存储。</p>
+<p>我建议命名为 “blog”，像这样：<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/v730m7k6.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
+                      alt="blog 文件夹"
+                ></p>
+<p>在文件夹中右键–&gt;git bash here。</p>
+<p>先输入 <code>ssh</code> 检查一下 git 是否已经下载了 ssh 配件。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/u1db64m4.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
+                      alt="ssh 检验"
+                ></p>
+<p>生成 ssh：<br><code>ssh-keygen -t rsa -C &quot;注册 Github 时使用的邮件地址&quot;</code>。</p>
+<p>然后按四次回车。</p>
+<p>然后去：C盘 –&gt; User –&gt; &lt;你的用户&gt; –&gt; “.ssh” 文件夹找到这个文件。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/tm4szn5x.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
+                      alt="ssh 文件"
+                ><br>记事本打开并全选复制。</p>
+<p>然后进入 Github 点击头像进入 Setting。</p>
+<p>找到 “SSH and GPG keys”。</p>
+<p>点击 “New SSH Key”。</p>
+<p>名字随便，把刚刚复制的 ssh 粘贴进去。</p>
+<p>测试是否绑定成功：<code>ssh -T git@github.com</code>。</p>
+<p>有一个地方输入 yes，然后出现 “Successfully” 就好了。</p>
+<h2 id="开始配置"><a href="#开始配置" class="headerlink" title="开始配置"></a>开始配置</h2><p>在 “blog” 文件夹中右键选择 “Git Bash Here”。</p>
+<p>输入：<code>hexo init</code>。</p>
+<p>出现 “start blogging…” 就好了。</p>
+<p>输入 “hexo s” 会弹出一个网址，按 “Ctrl + C” 输入新命令。</p>
+<p>（那个网址打不开没关系，我也打不开qwq）</p>
+<p>在你的文件夹中打开 “_config.yml” 文件。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/0du7c9ze.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
+                      alt="_config.yml"
+                ></p>
+<p>翻到最底部，把 “deploy” 部分改一下。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:&lt;你的 Github 用户名&gt;/&lt;Github 仓库名&gt;.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure></div>
+
+<p>配置好后就可以三连一键上传了。</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></div>
+
+<p>（有问题百度一下，github 上有很多奇奇怪怪问题的存档，也可以私信问我）</p>
+<h3 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h3><p>我们使用 redefine 主题，这个主题的自定义，方便程度都是很好的，作者也预留了许多插件接口。</p>
+<p>在 git 中输入：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd your-hexo-site</span><br><span class="line">git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine` git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redefine`。</span><br></pre></td></tr></table></figure></div>
+
+<p>在 “_config.yml” 文件中把 deploy 上面的 “theme” 改成主题名就好了。</p>
+<p>然后就可以自定义了，参考 <a class="link"   target="_blank" rel="noopener" href="https://redefine-docs.ohevan.com/"  title="官方文章">官方文章 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 进行改动。</p>
+<p>创建博客只需要在 source –&gt; _posts 文件夹中新建 .md 文件就好了。</p></div><div class="tab-pane" id="hexo-and-redefine-theme-2"><p><strong>注：本内容仅适用于 redefine 主题，其他主题请移步其他地方。</strong></p>
+<p>下面是主题各种自定义的演示。</p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://redefine.ohevan.com/2022/10/02/theme-demo/" >主题样式 Demo - Theme Redefine <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h2 id="界面自定义"><a href="#界面自定义" class="headerlink" title="界面自定义"></a>界面自定义</h2><h3 id="壁纸"><a href="#壁纸" class="headerlink" title="壁纸"></a>壁纸</h3><p>redefine 主题分为 light&#x2F;dark 模式，这对应的是两个壁纸。</p>
+<p>如果你想更换壁纸，你可以将<strong>横幅</strong>壁纸放置在：blog\themes\redefine\source\images 文件夹下，然后使用。</p>
+<p>更换壁纸时，在主题 _config.yml 文件的 HOME BANNER 部分更改：</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">home_banner:</span><br><span class="line"></span><br><span class="line">  ...</span><br><span class="line"></span><br><span class="line">  image: </span><br><span class="line">    light: /images/light.png # light mode</span><br><span class="line">    dark: /images/wallhaven-wqery6-dark.webp # dark mode</span><br><span class="line">  # 将 light 模式下的壁纸更换为：blog\themes\redefine\source\images\light.png</span><br><span class="line"></span><br><span class="line">  ...</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="标签-分类墙"><a href="#标签-分类墙" class="headerlink" title="标签 &#x2F; 分类墙"></a>标签 &#x2F; 分类墙</h3><h4 id="标签（Tags）墙"><a href="#标签（Tags）墙" class="headerlink" title="标签（Tags）墙"></a>标签（Tags）墙</h4><p>有两种样式：blur 样式和 cloud 样式。</p>
+<p>blur 样式为传统的统计个数样式。</p>
+<p>cloud 样式为词云样式。</p>
+<p>在主题 _config.yml –&gt; page_templates 部分修改样式。</p>
+<h5 id="启用标签墙"><a href="#启用标签墙" class="headerlink" title="启用标签墙"></a>启用标签墙</h5><p>当你没有做操作就点进标签墙，你会发现 404 了。</p>
+<p><del>（其实我也不知道咋办）</del></p>
+<p><del>（开个玩笑）</del></p>
+<p>在 git bash 中输入：<code>hexo new page tags</code> 创建。</p>
+<h5 id="使用标签墙"><a href="#使用标签墙" class="headerlink" title="使用标签墙"></a>使用标签墙</h5><p>在主题 _config.yml 文件中的 navbar &#x2F; sidebar 中启用。</p>
+<p>navbar 对应上端导航栏，sidebar 对应文章侧边栏。</p>
+<h4 id="分类（categories）墙"><a href="#分类（categories）墙" class="headerlink" title="分类（categories）墙"></a>分类（categories）墙</h4><p><strong>注：分类墙不分样式。</strong></p>
+<h5 id="启用标签墙-1"><a href="#启用标签墙-1" class="headerlink" title="启用标签墙"></a>启用标签墙</h5><p>在 git bash 中输入：<code>hexo new page categories</code> 创建。</p>
+<h5 id="使用标签墙-1"><a href="#使用标签墙-1" class="headerlink" title="使用标签墙"></a>使用标签墙</h5><p>在主题 _config.yml 文件中的 navbar &#x2F; sidebar 中启用。</p>
+<p>navbar 对应上端导航栏，sidebar 对应文章侧边栏。</p>
+<p>未完待续…</p></div></div></div>
         </div>
 
         
@@ -526,7 +638,7 @@
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-09-03 23:16:03
+                    :</strong> 2024-09-03 23:22:19
             </li>
         
         <li>
@@ -627,7 +739,7 @@
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
         <div class="page-title">Hexo + redefine主题配置个人博客</div>
-        
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87"><span class="nav-text">前置准备</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#node-js%EF%BC%9A"><span class="nav-text">node js：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#git%EF%BC%9A"><span class="nav-text">git：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo%EF%BC%9A"><span class="nav-text">Hexo：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#github-%E4%BB%93%E5%BA%93%EF%BC%9A"><span class="nav-text">github 仓库：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AE"><span class="nav-text">开始配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE"><span class="nav-text">主题配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%95%8C%E9%9D%A2%E8%87%AA%E5%AE%9A%E4%B9%89"><span class="nav-text">界面自定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A3%81%E7%BA%B8"><span class="nav-text">壁纸</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE-%E5%88%86%E7%B1%BB%E5%A2%99"><span class="nav-text">标签 &#x2F; 分类墙</span></a></li></ol></li></ol>
 
     </div>
 </div>

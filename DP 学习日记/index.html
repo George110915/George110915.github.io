@@ -27,7 +27,7 @@
 <meta property="og:description" content="DP 概述DP（Dynamic programming，全称动态规划），是一种基于分治，将原问题分解为简单子问题求解复杂问题的方法。 动态规划的耗时往往远少于朴素（爆搜）解法。 动态规划 and 递归之前说过，动态规划也是分治思路，而递归更是传统的分治思路，但时间复杂度却大相径庭，为什么呢？ 动态规划是 自顶向上 思想，而递归是 自顶向下 解法。 自顶向上 and 自顶向下？自顶向上意思很简单，从">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-09-07T03:20:41.008Z">
-<meta property="article:modified_time" content="2024-09-07T04:18:51.279Z">
+<meta property="article:modified_time" content="2024-09-07T05:16:24.781Z">
 <meta property="article:author" content="George222">
 <meta property="article:tag" content="C++">
 <meta property="article:tag" content="动态规划">
@@ -601,8 +601,8 @@ mjx-container[display="true"] + br {
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-09-07 14:18:51</span>
-            <span class="mobile">2024-09-07 14:18:51</span>
+            <span class="desktop">2024-09-07 15:16:24</span>
+            <span class="mobile">2024-09-07 15:16:24</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -711,6 +711,11 @@ mjx-container[display="true"] + br {
 <p><a class="link" target="_blank" rel="noopener" href="https://houbb.github.io/2020/01/23/data-struct-learn-07-base-dp?_360safeparam=750518015">五大基本算法之动态规划算法 DP dynamic programming <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p><a class="link" target="_blank" rel="noopener" href="https://labuladong.online/algo/essential-technique/dynamic-programming-framework/">动态规划解题套路框架 | labuladong 的算法笔记 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p><a class="link" target="_blank" rel="noopener" href="https://doc.vercel.app/ds/article/75702.html#%E4%B8%A4%E7%A7%8D%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93">1.最优子结构 | 数据结构与算法之美 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><h3 id="例题-1"><a href="#例题-1" class="headerlink" title="例题 1"></a>例题 1</h3><blockquote>
+<p>纯 DP</p>
+</blockquote>
+<p><a class="link" target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/U476174">点我查看题目 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>没看数据：好一个 dfs！</p>
 
         </div>
 
@@ -725,7 +730,7 @@ mjx-container[display="true"] + br {
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-09-07 14:18:51
+                    :</strong> 2024-09-07 15:16:24
             </li>
         
         <li>
@@ -838,7 +843,7 @@ mjx-container[display="true"] + br {
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
         <div class="page-title">DP 算法学习日记</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#DP-%E6%A6%82%E8%BF%B0"><span class="nav-text">DP 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-and-%E9%80%92%E5%BD%92"><span class="nav-text">动态规划 and 递归</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8A-and-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%EF%BC%9F"><span class="nav-text">自顶向上 and 自顶向下？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%96%B9%E7%A8%8B"><span class="nav-text">状态转移方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%A6%81%E7%B4%A0"><span class="nav-text">动态规划要素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text">状态的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80%EF%BC%9A%E7%A9%BA%E9%97%B4%E6%8D%A2%E6%97%B6%E9%97%B4"><span class="nav-text">前言：空间换时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%EF%BC%9F"><span class="nav-text">状态？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-text">参考资料</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#DP-%E6%A6%82%E8%BF%B0"><span class="nav-text">DP 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-and-%E9%80%92%E5%BD%92"><span class="nav-text">动态规划 and 递归</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8A-and-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%EF%BC%9F"><span class="nav-text">自顶向上 and 自顶向下？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E8%BD%AC%E7%A7%BB%E6%96%B9%E7%A8%8B"><span class="nav-text">状态转移方程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E8%A6%81%E7%B4%A0"><span class="nav-text">动态规划要素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text">状态的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80%EF%BC%9A%E7%A9%BA%E9%97%B4%E6%8D%A2%E6%97%B6%E9%97%B4"><span class="nav-text">前言：空间换时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%EF%BC%9F"><span class="nav-text">状态？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-text">参考资料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98"><span class="nav-text">例题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%8B%E9%A2%98-1"><span class="nav-text">例题 1</span></a></li></ol></li></ol>
 
     </div>
 </div>

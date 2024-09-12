@@ -14,26 +14,23 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://george110915.github.io/从零开始学习c++之输入输出/"/>
+    <link rel="canonical" href="https://george110915.github.io/c++ 循环结构/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="本篇帖子学习 C++ 输入输出。 C++ 目前最常用的两种输入输出方法，cin&#x2F;cout 和 scanf&#x2F;printf。 cin&#x2F;cout这是 C++ 入门必学且最最最基础的输入输出方式，在 &lt;iostream&gt; 头文件，std 命名空间下。 基本格式如下： 12cin &gt;&gt; x;cout &lt;&lt; x &lt;&lt; &quot;\n&quot;; &#x2F;">
+        <meta name="description" content="本文讲解 C++ 中循环的使用。 C++ 中较常用的两种循环为 for 循环和 while 循环。 for 循环for 循环主要用于实现两个区间中间的枚举。 例如：从  中输出所有数就能使用 for 循环解决。 这是 for 循环标准格式： 123456789&#x2F;*for (变量类型 变量名 &#x3D; 左区间; 循环退出条件（如：i &lt;&#x3D; n）; 变量增加){	代码}*&#x2F;&#x2F;&#x2F; 例：从 1~100，每">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从零开始学习C++之输入输出">
-<meta property="og:url" content="https://george110915.github.io/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/index.html">
+<meta property="og:title" content="C++ 循环结构">
+<meta property="og:url" content="https://george110915.github.io/C++%20%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="George222">
-<meta property="og:description" content="本篇帖子学习 C++ 输入输出。 C++ 目前最常用的两种输入输出方法，cin&#x2F;cout 和 scanf&#x2F;printf。 cin&#x2F;cout这是 C++ 入门必学且最最最基础的输入输出方式，在 &lt;iostream&gt; 头文件，std 命名空间下。 基本格式如下： 12cin &gt;&gt; x;cout &lt;&lt; x &lt;&lt; &quot;\n&quot;; &#x2F;">
+<meta property="og:description" content="本文讲解 C++ 中循环的使用。 C++ 中较常用的两种循环为 for 循环和 while 循环。 for 循环for 循环主要用于实现两个区间中间的枚举。 例如：从  中输出所有数就能使用 for 循环解决。 这是 for 循环标准格式： 123456789&#x2F;*for (变量类型 变量名 &#x3D; 左区间; 循环退出条件（如：i &lt;&#x3D; n）; 变量增加){	代码}*&#x2F;&#x2F;&#x2F; 例：从 1~100，每">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/vspd48w9.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
-<meta property="og:image" content="https://cdn.luogu.com.cn/upload/image_hosting/zldhelot.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
-<meta property="article:published_time" content="2024-08-19T14:00:00.000Z">
-<meta property="article:modified_time" content="2024-08-28T00:28:06.657Z">
+<meta property="article:published_time" content="2024-08-21T14:00:00.000Z">
+<meta property="article:modified_time" content="2024-09-12T07:39:44.412Z">
 <meta property="article:author" content="George222">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/image_hosting/vspd48w9.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250">
     
     
     <!--- Icon Part-->
@@ -45,7 +42,7 @@
     
     <title>
         
-            从零开始学习C++之输入输出 -
+            C++ 循环结构 -
         
         George222
     </title>
@@ -117,7 +114,119 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 
 <body>
@@ -533,11 +642,11 @@
         <div class="label text-third-text-color text-sm">标签</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">8</div>
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">23</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">22</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -563,7 +672,7 @@
         <div class="article-title relative w-full">
             
                 <div class="w-full flex items-center pt-6 justify-start">
-                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">从零开始学习C++之输入输出</h1>
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">C++ 循环结构</h1>
                 </div>
             
             </div>
@@ -584,15 +693,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2024-08-20</span>
-        <span class="mobile">2024-08-20</span>
+        <span class="desktop">2024-08-22</span>
+        <span class="mobile">2024-08-22</span>
         <span class="hover-info">创建</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2024-08-28 10:28:06</span>
-            <span class="mobile">2024-08-28 10:28:06</span>
+            <span class="desktop">2024-09-12 17:39:44</span>
+            <span class="mobile">2024-09-12 17:39:44</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -607,6 +716,16 @@
                         
                         <li>
                             <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/">从零开始学习C++</a>&nbsp;
+                        </li>
+                    
+                    
+                
+                    
+                        
+                            <li>></li>
+                        
+                        <li>
+                            <a href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C/%E8%AF%AD%E6%B3%95/">语法</a>&nbsp;
                         </li>
                     
                     
@@ -646,65 +765,34 @@
 
 
         <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-            <p>本篇帖子学习 C++ 输入输出。</p>
-<p>C++ 目前最常用的两种输入输出方法，<code>cin/cout</code> 和 <code>scanf/printf</code>。</p>
-<h2 id="cin-cout"><a href="#cin-cout" class="headerlink" title="cin&#x2F;cout"></a>cin&#x2F;cout</h2><p>这是 C++ 入门必学且最最最基础的输入输出方式，在 <code>&lt;iostream&gt;</code> 头文件，std 命名空间下。</p>
-<p>基本格式如下：</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cin &gt;&gt; x;</span><br><span class="line">cout &lt;&lt; x &lt;&lt; <span class="string">&quot;\n&quot;</span>; <span class="comment">// &quot;\n&quot;为换行符</span></span><br></pre></td></tr></table></figure></div>
+            <p>本文讲解 C++ 中循环的使用。</p>
+<p>C++ 中较常用的两种循环为 for 循环和 while 循环。</p>
+<h2 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a>for 循环</h2><p>for 循环主要用于实现两个区间中间的枚举。</p>
+<p>例如：从 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="7.542ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 3333.6 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(777.8,0)"><path data-c="223C" d="M55 166Q55 241 101 304T222 367Q260 367 296 349T362 304T421 252T484 208T554 189Q616 189 655 236T694 338Q694 350 698 358T708 367Q722 367 722 334Q722 260 677 197T562 134H554Q517 134 481 152T414 196T355 248T292 293T223 311Q179 311 145 286Q109 257 96 218T80 156T69 133Q55 133 55 166Z"></path></g><g data-mml-node="mn" transform="translate(1833.6,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g></g></g></svg></mjx-container> 中输出所有数就能使用 for 循环解决。</p>
+<p>这是 for 循环标准格式：</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">for (变量类型 变量名 = 左区间; 循环退出条件（如：i &lt;= n）; 变量增加)</span></span><br><span class="line"><span class="comment">{</span></span><br><span class="line"><span class="comment">	代码</span></span><br><span class="line"><span class="comment">}</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 例：从 1~100，每次+1</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++)</span><br></pre></td></tr></table></figure></div>
 
-<p>注：很多教材会教你换行输出 <code>endl</code>，但是这个到了后期不常用且可能与一些代码冲突（如 IO 加速），所以建议使用 <code>\n</code>。</p>
-<h2 id="scanf-printf"><a href="#scanf-printf" class="headerlink" title="scanf&#x2F;printf"></a>scanf&#x2F;printf</h2><p>很多新手会在题目中看见这句话，无视后莫名其妙的超时，该怎么办呢？</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/vspd48w9.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
-                      alt="image"
-                ></p>
-<p>这时，我们就要舍去<del>垃圾(bushi)</del> <code>cin/cout</code>，使用更快速的 <code>scanf/printf</code>。</p>
-<p><code>scanf/printf</code> 在 <code>&lt;stdio.h&gt;</code> 头文件下。</p>
-<p>下面是格式：</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;x);</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, x);</span><br><span class="line"><span class="comment">// 注：&quot;%d&quot; 为输入输入数据的类型，详情见下文；</span></span><br><span class="line"><span class="comment">// 注：&quot;scanf&quot; 的输入变量前必须加 &#x27;&amp;&#x27;。</span></span><br></pre></td></tr></table></figure></div>
-
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="https://cdn.luogu.com.cn/upload/image_hosting/zldhelot.png?x-oss-process=image/resize,m_lfit,h_1700,w_2250"
-                      alt="image"
-                ></p>
-<p>这是具体的类型对照图，这里还有一点补充：</p>
-<ol>
-<li><p><strong>‘*’ 符</strong>：表示读入后不赋予相应的变量，即跳过该输入值。</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d %*d %d&quot;</span>, &amp;a, &amp;b);</span><br><span class="line"><span class="comment">// 表示将第一个数字赋值给 a，第二个数不要，第三个数赋值给 b。</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>输入、输出长度<br>用整数指定输入&#x2F;输出的长度。</p>
-<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%3d&quot;</span>, &amp;x);</span><br><span class="line"><span class="comment">// 输入 12345，仅留下 123。</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%.2lf&quot;</span>, pi);</span><br><span class="line"><span class="comment">// 保留 2 位小数。</span></span><br></pre></td></tr></table></figure></div>
-</li>
-<li><p>长整型，高精度类型<br>非常简单，在前面加上 ‘l’ 就好。</p>
-</li>
-</ol>
-<p>例：<br>长整型：<code>lld</code>。<br>double 高精度小数类型：<code>lf</code>。</p>
-<h2 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h2><p>使用 <code>cout/printf</code> 输出字符串 <code>Hello World!</code>。</p>
-<h2 id="作者的话"><a href="#作者的话" class="headerlink" title="作者的话"></a>作者的话</h2><p>好啦，就到这里了，祝你开心！</p>
-<p><del>（都有作业了，开心个der）（bushi）</del></p>
-
+<h2 id="while-循环"><a href="#while-循环" class="headerlink" title="while 循环"></a>while 循环</h2><p>while 循环通常用于满足某个条件前/后的使用。</p>
+<p>while 循环标准格式如下：</p>
+<div class="highlight-container" data-rel="Cpp"><figure class="iseeu highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">while (进入条件) // 注：是进入条件</span></span><br><span class="line"><span class="comment">{</span></span><br><span class="line"><span class="comment">	代码</span></span><br><span class="line"><span class="comment">}</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">注：while会在条件满足时一直执行</span></span><br><span class="line"><span class="comment">例：while (true) 为死循环。</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></div>
         </div>
 
         
             <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>标题:</strong> 从零开始学习C++之输入输出</li>
+        <li><strong>标题:</strong> C++ 循环结构</li>
         <li><strong>作者:</strong> George222</li>
         <li><strong>创建于
-                :</strong> 2024-08-20 00:00:00</li>
+                :</strong> 2024-08-22 00:00:00</li>
         
             <li>
                 <strong>更新于
-                    :</strong> 2024-08-28 10:28:06
+                    :</strong> 2024-09-12 17:39:44
             </li>
         
         <li>
-            <strong>链接:</strong> https://george110915.github.io/从零开始学习C++之输入输出/
+            <strong>链接:</strong> https://george110915.github.io/C++ 循环结构/
         </li>
         <li>
             <strong>
@@ -740,13 +828,13 @@
                     <div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
                         <a class="prev"
                         rel="prev"
-                        href="/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0C++%E4%B9%8B%E5%9F%BA%E6%9C%AC%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F/"
+                        href="/C++%20%E5%8F%98%E9%87%8F%E4%B8%8E%E6%95%B0%E7%BB%84/"
                         >
                             <span class="left arrow-icon flex justify-center items-center">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </span>
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">从零开始学习C++之基本代码格式</span>
+                                <span class="post-nav-title-item">C++ 变量与数组</span>
                                 <span class="post-nav-item">上一篇</span>
                             </span>
                         </a>
@@ -823,8 +911,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
-        <div class="page-title">从零开始学习C++之输入输出</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#cin-cout"><span class="nav-text">cin&#x2F;cout</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#scanf-printf"><span class="nav-text">scanf&#x2F;printf</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%9C%E4%B8%9A"><span class="nav-text">作业</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%9C%E8%80%85%E7%9A%84%E8%AF%9D"><span class="nav-text">作者的话</span></a></li></ol>
+        <div class="page-title">C++ 循环结构</div>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#for-%E5%BE%AA%E7%8E%AF"><span class="nav-text">for 循环</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#while-%E5%BE%AA%E7%8E%AF"><span class="nav-text">while 循环</span></a></li></ol>
 
     </div>
 </div>
@@ -857,7 +945,7 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共 23 篇文章
+                        共 22 篇文章
                     </span>
                     
                 </p>

@@ -1,10 +1,10 @@
+https://george110915.github.io/%E6%A0%91%E4%B8%8A%E5%80%8D%E5%A2%9E%E4%B8%8B%E7%9A%84%20LCA%20%E9%97%AE%E9%A2%98/
 https://george110915.github.io/DP%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/
 https://george110915.github.io/CSP-J%202024%20T3%20sol/
 https://george110915.github.io/CSP-J%202024%20T2%20sol/
 https://george110915.github.io/CSP-J%202024%20T1%20sol/
 https://george110915.github.io/[ABC057-D]%20sol/
 https://george110915.github.io/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/
-https://george110915.github.io/%E6%A0%91%E4%B8%8A%E5%80%8D%E5%A2%9E%E4%B8%8B%E7%9A%84%20LCA%20%E9%97%AE%E9%A2%98/
 https://george110915.github.io/%E5%80%8D%E5%A2%9E%20and%20RMQ%20%E9%97%AE%E9%A2%98%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/
 https://george110915.github.io/Floyd%20%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/
 https://george110915.github.io/%E9%A2%98%E8%A7%A3%EF%BC%9AAT_abc140_e%20[ABC140E]%20Second%20Sum/

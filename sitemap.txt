@@ -1,3 +1,4 @@
+https://george110915.github.io/USACO%2025FEB%20B%20sol/
 https://george110915.github.io/%E6%A0%91%E4%B8%8A%E5%80%8D%E5%A2%9E%E4%B8%8B%E7%9A%84%20LCA%20%E9%97%AE%E9%A2%98/
 https://george110915.github.io/DP%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/
 https://george110915.github.io/CSP-J%202024%20T3%20sol/
@@ -48,3 +49,6 @@ https://george110915.github.io/categories/%E9%A2%98%E8%A7%A3/%E6%B4%9B%E8%B0%B7/
 https://george110915.github.io/categories/%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/
 https://george110915.github.io/categories/%E9%A2%98%E8%A7%A3/ATCoder/
 https://george110915.github.io/categories/%E9%A2%98%E8%A7%A3/CSP-J-2024/
+https://george110915.github.io/categories/%E9%A2%98%E8%A7%A3/USACO/
+https://george110915.github.io/categories/%E9%A2%98%E8%A7%A3/USACO/25FEB/
+https://george110915.github.io/categories/%E9%A2%98%E8%A7%A3/USACO/25FEB/%E9%93%9C%E7%BB%84/

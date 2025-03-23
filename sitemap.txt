@@ -1,10 +1,10 @@
+https://george110915.github.io/DP%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/
 https://george110915.github.io/KMP%20%E5%85%A5%E9%97%A8/
 https://george110915.github.io/%E5%B9%B6%E6%9F%A5%E9%9B%86%E5%85%A5%E9%97%A8/
 https://george110915.github.io/Hexo%20%E4%B8%8E%20redefine%20%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/
 https://george110915.github.io/%E5%80%8D%E5%A2%9E%20&%20RMQ/
 https://george110915.github.io/USACO%2025FEB%20B%20sol/
 https://george110915.github.io/%E6%A0%91%E4%B8%8A%E5%80%8D%E5%A2%9E%E4%B8%8B%E7%9A%84%20LCA%20%E9%97%AE%E9%A2%98/
-https://george110915.github.io/DP%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/
 https://george110915.github.io/CSP-J%202024%20T3%20sol/
 https://george110915.github.io/CSP-J%202024%20T2%20sol/
 https://george110915.github.io/CSP-J%202024%20T1%20sol/
